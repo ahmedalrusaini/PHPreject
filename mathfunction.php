@@ -48,13 +48,50 @@ echo "<br>" . rand();
 echo "<br>" . rand(1,20);//1 to 20
 echo "<br>" . rand(00000,99999);//5 digit
 
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
 
+echo "<br>" . ++$num1;
+echo "<br>" . --$num1;
+echo "<br>" . --$num1;
+echo "<br>" . --$num1;
+echo "<br>" . --$num1;
+echo "<br>" . --$num1;
+echo "<br>" . --$num1;
 
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
+echo "<br>";
 
+$v1 = 1;
+$v2 = 2.5;
+$v3 = "Qassim";
+$v4 = FALSE;
+$v5 = array(1,2);
 
+//is_numeric
+echo "<br>is_numeric($v1)" . is_numeric($v1);
+echo "<br>is_numeric($v2)" . is_numeric($v2);
 
+//is_int
+echo "<br>is_int($v1)" . is_int($v1);
 
+//is_float
+echo "<br>is_float($v2)" . is_float($v2);
 
+//is_string
+echo "<br>is_string($v3)" . is_string($v3);
 
+//is_bool
+echo "<br>is_bool($v4)" . is_bool($v4);
+
+//is_array
+echo "<br>is_array(v5)" . is_array($v5);
 
 ?>
