@@ -64,6 +64,7 @@ print_r($num);
 
 //implode
 echo implode(" .. ", $num);
+echo "<br>";
 //explode like split()
 $nameString = "a,b,c";
 print_r(explode(",", $nameString));
