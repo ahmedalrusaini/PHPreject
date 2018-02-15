@@ -14,6 +14,10 @@ echo "<br>";
 echo strrev($city);
 
 $city = "PARIS";
+
+echo "<br>";
+echo strtolower($city);
+
 echo "<br>";
 echo lcfirst($city);
 

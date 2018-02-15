@@ -8,6 +8,11 @@ if (!isset($_SESSION["ID"])){
 <?php
 echo "<br>" . $_SESSION["person"];
 echo "<br>" . $_SESSION["username"];
+
+echo "<br>";
+print_r($_SESSION);
+echo "<br>";
+
 ?>
 <br>
 <button onclick="javascript:window.location.href='logout.php'">Logout</button>

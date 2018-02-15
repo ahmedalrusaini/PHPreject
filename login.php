@@ -1,13 +1,17 @@
+
+
 <?php 
+echo "<ul>";
 if (isset( $_REQUEST["msg1"] )){
-    echo $_REQUEST["msg1"];
+    echo "<li>" . $_REQUEST["msg1"] . "</li>";
 }
-echo "<br>";
 if (isset( $_REQUEST["msg2"] )){
-    echo $_REQUEST["msg2"];
+    echo "<li>" . $_REQUEST["msg2"] . "</li>";
 }
-echo "<br>";
+echo "</ul><br>";
 ?>
+
+
 <form action="transfer/createIDsession.php" method="GET">
 <br><input name="username" type="text" placeholder="enter username.." />
 <br><input name="password" type="password" placeholder="enter password" />

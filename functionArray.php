@@ -5,7 +5,9 @@ $assoc = array(
     "b" => "cat"
 );
 //تغيير المفتاح من حروف صغيره الى كبيره
+echo "<pre>";
 print_r( array_change_key_case($assoc,CASE_UPPER/* CASE_LOWER */) );
+echo "<pre>";
 
 echo "<pre>";
 print_r(array_chunk($assoc,2));
@@ -71,6 +73,12 @@ print_r(explode(",", $nameString));
 //in_array
 echo "<br>" . in_array(12, $num);
 echo "<br>" . in_array(2, $num);
+
+echo "<br>";
+array_push($num, 5);
+echo "<pre>";
+print_r($num);
+echo "<pre>";
 
 
 ?>
