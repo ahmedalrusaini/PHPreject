@@ -9,14 +9,15 @@ if (!$conn) {
 }
 ?>
 <?php
-
-$name = "Mariah";
+$id = 5;
+$col = "name";
+$val = "Reem";
     
-$sql="INSERT INTO `jobs`(`name`) VALUES ('{$name}')";
+$sql="UPDATE `jobs` SET {$col} = '{$val}' WHERE ID = ".$id;
 if (mysqli_query($conn, $sql)) {
-    echo "inserted";
+    echo "updated";
 }else {
-    echo "error inserted<br>Error:".mysqli_error($conn);
+    echo "error updated<br>Error:".mysqli_error($conn);
 }
 ?>
 <?php 

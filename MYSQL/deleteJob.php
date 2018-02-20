@@ -10,13 +10,13 @@ if (!$conn) {
 ?>
 <?php
 
-$name = "Mariah";
+$id = 6;
     
-$sql="INSERT INTO `jobs`(`name`) VALUES ('{$name}')";
+$sql="DELETE FROM `jobs` WHERE ID = ".$id;
 if (mysqli_query($conn, $sql)) {
-    echo "inserted";
+    echo "deleted";
 }else {
-    echo "error inserted<br>Error:".mysqli_error($conn);
+    echo "error deleted<br>Error:".mysqli_error($conn);
 }
 ?>
 <?php 
